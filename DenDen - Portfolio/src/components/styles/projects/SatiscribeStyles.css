@@ -1,0 +1,52 @@
+.nept-container-1,
+.container-1{
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    justify-content: center;
+    margin-bottom: 5vh;
+    margin-left: 2.5vw;
+}
+
+.text-container-1{
+    display: flex;
+    flex-direction: column;
+}
+
+.nept-container-1-img,
+.container-1-img{
+    padding: 2vw;
+    width: 36vw;
+    object-fit: contain;
+}
+
+.text-1-header{
+    font: 600 3vmin 'Lato';
+    margin: 0;
+    margin-left: 2vw;
+}
+
+.text-list{
+    font: 400 2.25vmin 'Lato';
+    margin: 1.5vh 2vw;
+    width: 85%;
+}
+
+.text-list-1{
+    font: 400 2.25vmin 'Lato';
+}
+
+.container-3{
+    width: 60vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-left: 12.5vw;
+}
+
+.container-3-img{
+    width: 100%;
+    object-fit: contain;
+}

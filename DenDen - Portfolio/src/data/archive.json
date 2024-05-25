@@ -1,0 +1,26 @@
+{
+    "projects": [
+      {
+        "key": "hand_gesture_recognition",
+        "date": "Mar 2024",
+        "name": "Digital EDU Learning Platform Dev",
+        "company": "Personal",
+        "scope": "UI/UX"
+      },
+      {
+        "key": "flea",
+        "date": "Mar 2024",
+        "name": "GETSUPERNOW",
+        "company": "Personal",
+        "scope": "UI/UX"
+      },
+      {
+        "key": "sh*t_landing_on_you",
+        "date": "Mar 2024",
+        "name": "Staffing Agency Re-Design & Brand",
+        "company": "Personal",
+        "scope": "UI/UX"
+      }
+    ]
+  }
+  

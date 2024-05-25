@@ -1,0 +1,76 @@
+.flea-container-1{
+    display: flex;
+    width: 40vw;
+    flex-direction: column;
+    margin-left: 22.5vw;
+    margin-bottom: 16vh
+}
+
+.flea-image-2{
+    width: 40vw;
+    object-fit: contain;
+}
+
+.flea-captions{
+    font: 400 2.25vmin 'Lato';
+    text-align: center;
+}
+
+.flea-container-2{
+    display: flex;
+    width: 82vw;
+    flex-direction: column;
+    margin-bottom: 4vh;
+    margin-left: 1.5vw;
+}
+
+.flea-image-4{
+    width: 82vw;
+    object-fit: contain;
+}
+
+.flea-container-3{
+    display: flex;
+    width: 82vw;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 16vh;
+    margin-left: 1.5vw;
+    align-items: center;
+}
+
+.flea-image-3{
+    width: 61vw;
+    object-fit: contain;
+}
+
+.flea-left-text{
+    margin-left: 4vw;
+    width: 16vw;
+    font: 400 2.25vmin 'Lato';
+}
+
+.flea-container-4{
+    display: flex;
+    width: 82vw;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 4vh;
+    align-items: center;
+    margin-left: 1.5vw;
+}
+
+.flea-right-text{
+    margin-right: 8vw;
+    width: 32vw;
+    font: 400 2.25vmin 'Lato';
+}
+
+.flea-container-5{
+    display: flex;
+    width: 82vw;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 16vh;
+    margin-left: 1.5vw;
+}

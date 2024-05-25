@@ -1,0 +1,265 @@
+.loadingContainer{
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    position:absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    animation: none
+}
+
+.logoCircle{
+    position: relative;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    margin: calc(30vh - 18vw) 35%;
+    animation: expandPopUp 1s ease-in-out forwards;
+    transform-origin: center;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: background-color 1.5s;
+    transition-delay: 0.1s;
+}
+
+#logo{
+    height: 15vw;
+    width: 20vw;
+    object-fit: contain;
+}
+
+.rightear,
+.leftear{
+    stroke-dasharray: 94px;
+    opacity: 0;
+    animation: earanimation 1s forwards 4.5s;
+}
+
+.c-animation{
+    stroke-dasharray: 103px;
+    opacity: 0;
+    animation: canimation 1s forwards 1.3s;
+}
+
+.w-animation{
+    stroke-dasharray: 150px;
+    opacity: 0;
+    animation: wanimation 2s forwards 1.8s;
+}
+
+.x1-animation{
+    stroke-dasharray: 29px;
+    opacity: 0;
+    animation: xanimation 0.5s forwards 3.25s;
+}
+
+.x2-animation{
+    stroke-dasharray: 29px;
+    opacity: 0;
+    animation: xanimation 0.5s forwards 3.5s;
+}
+
+.whisker{
+    stroke-dasharray: 22px;
+    opacity: 0;
+    animation: whiskeranimation 1s forwards 4.5s;
+}
+
+@keyframes fadeanimationlight {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: var(--light_base);
+    }
+}
+
+
+@keyframes fadeanimationdark {
+    from {
+        background-color: #282828;
+    }
+    to {
+        background-color: var(--dark_base);
+    }
+}
+
+@keyframes expandPopUp {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    55% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes earanimation {
+    0% {
+        stroke-dashoffset: 93px;
+        opacity: 0;
+    }
+
+    10%{
+        stroke-dashoffset: 93px;
+        opacity: 1;
+    }
+
+    100% {
+        stroke-dashoffset: 0px;
+        opacity: 1;
+    }
+}
+
+
+@keyframes canimation {
+    0% {
+        stroke-dashoffset: 102px;
+        opacity: 0;
+    }
+
+    1%{
+        stroke-dashoffset: 102px;
+        opacity: 1;
+    }
+
+    100% {
+        stroke-dashoffset: 0px;
+        opacity: 1;
+    }
+}
+
+
+@keyframes wanimation {
+    0% {
+        stroke-dashoffset: 149px;
+        opacity: 0;
+    }
+
+    1%{
+        stroke-dashoffset: 149px;
+        opacity: 1;
+    }
+
+    100% {
+        stroke-dashoffset: 0px;
+        opacity: 1;
+    }
+}
+
+
+@keyframes xanimation {
+    0% {
+        stroke-dashoffset: 28px;
+        opacity: 0;
+    }
+
+    1%{
+        stroke-dashoffset: 28px;
+        opacity: 1;
+    }
+
+    100% {
+        stroke-dashoffset: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes whiskeranimation {
+    0% {
+        stroke-dashoffset: 21px;
+        opacity: 0;
+    }
+
+    10%{
+        stroke-dashoffset: 21px;
+        opacity: 1;
+    }
+
+    100% {
+        stroke-dashoffset: 0px;
+        opacity: 1;
+    }
+}
+
+.eyes{
+    opacity: 0;
+    background-color: white;
+    position: absolute;
+    left:11vw;
+    z-index: 999;
+    transform-origin:center;
+    width: 5vw;
+    height: 2.5vw;
+    border-radius: 50px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    animation: eyeopening 1s forwards 4s
+}
+
+.pupils{
+    background-color: var(--dark_base);
+    width: 2.6vw;
+    height: 2.6vw;
+    border-radius: 50%;
+    position: absolute;
+    left: 12px;
+    animation: eyemoving 1.5s forwards 5s;
+}
+
+@keyframes eyeopening {
+    0% {
+        transform: scaleX(0); 
+        height: 0.25vw;
+        opacity: 0;
+    }
+
+    1%{
+        transform: scaleX(0);
+        height: 0.25vw;
+        opacity: 1;
+    }
+
+    60% {
+        transform: scaleX(1); 
+        height: 0.25vw;
+        opacity: 1;
+    }
+
+    80%{
+        transform: scaleX(1); 
+        height: 3vw;
+        opacity: 1;
+    }
+
+    100%{
+        transform: scaleX(1); 
+        height: 2.5vw;
+        opacity: 1; 
+    }
+}
+
+@keyframes eyemoving {
+    0% {
+        left: 12px;
+    }
+
+    50% {
+        left: 25px;
+    }
+
+    100%{
+        left: 18px;
+    }
+}
+
+

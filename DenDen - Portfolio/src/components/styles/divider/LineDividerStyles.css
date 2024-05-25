@@ -1,0 +1,46 @@
+.linecontainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 85vw;
+    position: relative;
+}
+
+.yarn{
+    z-index: 1;
+    height: 5vmin;
+    object-fit: contain;
+    position: absolute;
+    bottom: 24px;
+    left: 0;
+    opacity: 0;
+    /* animation: rollin 4s forwards ease-in-out, rotating 4s forwards ease-in-out; */
+}
+
+
+  @keyframes rollin {
+    0% {
+      opacity: 1;
+      left: -16px;
+    }
+    100% {
+      opacity: 1;
+      left: 97.1%; 
+    }
+  }
+
+  @keyframes rotating {
+    0%{
+        transform: rotate(0deg);
+    }100% {
+        transform: rotate(2160deg);
+    }
+  }
+
+@keyframes drawline {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+

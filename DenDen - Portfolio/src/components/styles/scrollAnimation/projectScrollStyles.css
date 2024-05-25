@@ -1,0 +1,147 @@
+.SelectiveRenderTargets {
+    width: 65vw;
+    margin: 0 auto;
+    padding: 120vh 0;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    overflow-x: hidden;
+  }
+  
+  .SelectiveRenderTargets-element {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    height: 45vh;
+    margin: 10vh 0 10vh 0;
+    position: relative;
+    transition: transform 2s;
+    scroll-margin-bottom: 20vh;
+  }
+  
+  .SelectiveRenderTargets-element:nth-child(even) {
+    margin: 20vh 0 20vh 0;
+  }
+  
+  .SelectiveRenderTargets-element:first-child {
+    margin-top: 5vh;
+  }
+  
+  .SelectiveRenderTargets-element:last-child {
+    margin-bottom: 20vh;
+  }
+  
+  /* .SelectiveRenderTargets-element-inner {
+    box-sizing: border-box;
+    padding: 40px;
+  } */
+  
+  .SelectiveRenderTargets-title {
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    font-size: 2em;
+    font-weight: 700;
+    background: #ee6557;
+    display: inline-block;
+    padding: 0.125em 0.25em;
+  }
+  
+  .SelectiveRenderTargets-plane {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    bottom: 27.5vh;
+    left: 0;
+
+    height: 45vh;
+    width:50%;
+    object-fit: contain;
+  }
+  
+  .SelectiveRenderTargets-plane-long {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    bottom: 27.5vh;
+    left: 0;
+
+    height: 36vh;
+    width:100%;
+    object-fit: contain;
+  }
+
+  .SelectiveRenderTargets-element:nth-child(even) .SelectiveRenderTargets-plane {
+    right: 0;
+    left: 50%;
+  }
+  
+  .SelectiveRenderTargets-small-plane {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    bottom: 27.5vh;
+    left: 0;
+
+    height: 45vh;
+    width:50%;
+    object-fit: contain;
+  }
+  
+  .SelectiveRenderTargets-element:nth-child(even)
+    .SelectiveRenderTargets-small-plane {
+    right: auto;
+    left: 0;
+  }
+  
+  .SelectiveRenderTargets-plane-long img,
+  .SelectiveRenderTargets-plane img,
+  .SelectiveRenderTargets-small-plane img {
+    display: none;
+  }
+  
+
+.project-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  padding-left: 20vw;
+}
+
+.project-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: right;
+  padding-right: 35vw;
+}
+
+.project-horizontal{
+  width: 98%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  margin-top: 39vh;
+  margin-left: -2.5vw;
+}
+
+.SelectiveRenderTargets-element:hover .project-name{
+  background: linear-gradient(90deg, #e0e0e0, #999999,#424242, #999999,#e0e0e0);
+  background-repeat: repeat;
+  animation: shining 5s linear infinite;
+  background-size: 300% 100%;
+  background-clip: text; 
+  color: transparent;
+}
+
+.SelectiveRenderTargets-element:hover{
+  cursor: pointer;
+  transform: scale(1.02);
+}
+

@@ -1,0 +1,142 @@
+.home{
+    width: 100vw;
+    position:absolute;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+}
+
+
+.head{
+    height: 100vh;
+}
+
+.scrollsection{
+    display: flex;
+    flex-direction: column;
+    margin: 0 17.5vw 0 17.5vw;
+    height: 400vh;
+}
+
+.project-container{
+    display: flex;
+    flex-direction: column;
+    margin: -22.5vh 17.5vw 0 17.5vw;
+}
+
+.project-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-line{
+    width: 20%;
+    height: 2px;
+    border-radius: 1px;
+    transition: background-color 1.5s;
+}
+
+.project-selected{
+    font:400 5vmin 'Lato';
+    padding: 0 25px;
+}
+
+.neptinium,
+.satiscribe,
+.kopilo{
+    margin: 10vmin 0vw;
+    display: flex;
+    flex-direction: row;
+    transition: transform 1.5s;
+    scroll-margin-bottom: 20vh;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    margin: 0 17.5vw 0 17.5vw;
+}
+
+.aid{
+    margin: 10vmin 0vw;
+    display: flex;
+    flex-direction: column;
+    transition: transform 1.5s;
+}
+
+.satiscribe:hover .project-name,
+.neptinium:hover .project-name,
+.kopilo:hover .project-name,
+.aid:hover .project-name{
+    background: linear-gradient(90deg, #e0e0e0, #999999,#424242, #999999,#e0e0e0);
+    background-repeat: repeat;
+    animation: shining 5s linear infinite;
+    background-size: 300% 100%;
+    background-clip: text; 
+    color: transparent;
+}
+
+
+.satiscribe:hover,
+.neptinium:hover,
+.kopilo:hover,
+.aid:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.project-image-small{
+    width: 50%;
+    object-fit: cover;
+}
+
+.project-image-large{
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-text{
+    padding: 0 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-text-horizontal{
+    padding: 2vw 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.project-scope{
+    font: 400 2.75vmin 'Lato';
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 5px;
+}
+
+.project-name{
+    font: 400 5vmin 'Lato';
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 2px;
+    
+}
+
+
+.project-desc{
+    font: 400 2.25vmin 'Lato';
+    margin: 0;
+}
+
+@keyframes shining {
+    0%{
+        background-position: 150% 0%;
+    }
+    100%{
+        background-position: -150% 0%;
+    }
+}

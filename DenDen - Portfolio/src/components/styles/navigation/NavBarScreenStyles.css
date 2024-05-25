@@ -1,0 +1,80 @@
+.navContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Lato', sans-serif;
+    margin: 8vh 7.5vw;
+    opacity: 0;
+    animation: fadein 1s forwards;
+    position: sticky;
+    top:8vh;
+    left:7.5vw;
+    z-index: 999;
+}
+
+.rightnavContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 60%;
+}
+
+
+.name,
+.righttext{
+    color: var(--dark_base) !important;
+    font-size: 2.25vmin;
+    margin-right: 42px;
+    transition: color 1s;
+}
+
+.righttext:hover,
+.name:hover{
+    cursor: pointer;
+    background: linear-gradient(90deg, var(--dark_base), var(--dark_base),#b0b0b0, var(--dark_base),var(--dark_base));
+    background-repeat: repeat;
+    animation: shine 2.5s linear infinite;
+    background-size: 300% 100%;
+    background-clip: text; 
+    color: transparent !important;
+  }
+
+
+.namedark,
+.righttextdark{
+    color: var(--light_base) !important;
+    font-size: 2.25vmin;
+    margin-right: 42px;
+    transition: color 1s;
+}
+
+.righttextdark:hover,
+.namedark:hover{
+    cursor: pointer;
+    background: linear-gradient(90deg, var(--light_base), var(--light_base),#777777, var(--light_base),var(--light_base));
+    background-repeat: repeat;
+    animation: shine 2.5s linear infinite;
+    background-size: 300% 100%;
+    background-clip: text; 
+    color: transparent !important;
+}
+
+@keyframes shine {
+    0%{
+        background-position: 100% 0;
+    }
+    100%{
+        background-position: 0% 0;
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

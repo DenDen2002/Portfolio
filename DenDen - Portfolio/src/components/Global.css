@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --light_base : #FFFAF1;
+    --light_orange: #FFDFAE;
+    --dark_base: #181818;
+    --dark_gray: #949494;
+    --dark_brown: #413f3c;
+    --eye_orange: #F8CB74;
+    --scrollbar_color: #FFFAF1;
+}
+
+body{
+    transition: background-color 2.5s ease border-color 2.5s ease;
+    overflow-x: hidden;
+    margin: 0;
+    height: 100vh;
+    border-color: var(--scrollbar_color);
+}
+
+body::-webkit-scrollbar {
+    background-color:transparent;
+    width:16px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color:transparent
+}
+
+/* scrollbar itself */
+body::-webkit-scrollbar-thumb {
+    background-color:#a0a0a5;
+    border-radius:16px;
+    border:5px solid;
+    border-color: inherit;
+    transition: 1.5s all ease;
+}
+
+
+/* set button(top and bottom of the scrollbar) */
+body::-webkit-scrollbar-button {display:none}
+  
+p {
+    color: var(--dark_base);
+    transition: color 1.5s ease;
+    font-family: 'Lato';
+    cursor: default;
+}
+
+.dark_mode p {
+    color: var(--light_base);
+}
+
+a {
+    color: var(--dark_base);
+    transition: color 1.5s ease;
+    font-family: 'Lato';
+}
+
+
+.dark_mode a {
+    color: var(--light_base);
+}

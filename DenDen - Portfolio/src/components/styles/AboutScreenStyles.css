@@ -1,0 +1,167 @@
+.about-container,
+.archive-container{
+    width: 100vw;
+    position:absolute;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+}
+
+.archive-container{
+    height: 100vh;
+}
+
+.about,
+.skills,
+.experiences,
+.archive {
+    margin-left: 7.5vw;
+    margin-bottom: 75px;
+}
+
+
+.about-header,
+.skills-header,
+.experiences-header,
+.archive-header{
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes slideright {
+    0%{
+        margin-left: -7.5vw;
+        opacity: 0;
+    } 100%{
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+
+.about-text,
+.skills-text,
+.experiences-text,
+.archive-text{
+    font: 600 5vmin 'Lato';
+    margin: 0;
+    margin-bottom: -35px;
+    opacity: 0;
+    animation: slideright 1.2s forwards ease-in-out 1.25s
+}
+
+.about-content{
+    flex-direction: row;
+    display: flex;
+    margin-bottom: -30px;
+    opacity: 0;
+    width: 92.5vw;
+    animation: slideright 1.2s forwards ease-in-out 1.25s
+}
+
+.about-me{
+    display: flex;
+    flex-direction: column;
+    width:60%;
+    padding-right: 15%;
+}
+
+.about-me-text{
+    font: 400 2.5vmin 'Lato';
+    word-spacing: 2px;
+    line-height: 3vmin;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.about-contacts{
+    flex-direction: column;
+    display: flex;
+}
+
+.about-contacts-header{
+    font: 600 2.75vmin 'Lato';
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.about-contacts-link{
+    font: 500 2.5vmin 'Lato';
+    margin-bottom: 15px;
+    transition: color 1.5s ease;
+}
+
+
+.skill-set{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -15px;
+    opacity: 0;
+    animation: slideright 1.2s forwards ease-in-out 1.25s
+}
+
+.experiences-table,
+.archive-table{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -15px;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    animation: tableright 1.2s forwards ease-in-out 1.25s
+}
+
+@keyframes tableright {
+    0%{
+        left: 0;
+        opacity: 0;
+    } 100%{
+        left: 7.5vw;
+        opacity: 1;
+    }
+}
+
+.skill-set-header{
+    font: 400 2.5vmin 'Lato';
+    margin: 0;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+
+.skill-set-text{
+    font: 400 2.5vmin 'Lato';
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.experiences-row,
+.archive-row{
+    display: flex;
+    flex-direction: row;
+    margin-top: -24px;
+    z-index: 999;
+    margin-bottom: -45px;
+}
+
+.archive-table:hover *{
+    cursor: pointer;
+}
+
+.experiences-data,
+.experiences-company{
+     width: 25%;
+    font: 400 2.5vmin 'Lato';
+}
+
+.experiences-scope{
+    width:50%;
+    font: 400 2.5vmin 'Lato';
+}
+
+.experiences-table-line,
+.archive-line{
+    width: calc(100vw * 0.85);
+    height: 1.5px;
+    border-radius: 1px;
+    margin: 0 0 45px 0;
+    transition: background-color 1.5s;
+}

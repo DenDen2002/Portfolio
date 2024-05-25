@@ -1,0 +1,13 @@
+.hgr-image-container,
+.aid-image-container{
+    width: 60vw;
+    margin: 0;
+    margin-left: 12.5vw;
+}
+
+.hgr-image,
+.aid-image{
+    width: 60vw;
+    object-fit: contain;
+    margin-bottom: 8vh;
+}

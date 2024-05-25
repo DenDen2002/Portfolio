@@ -1,0 +1,84 @@
+.loaderContainer{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.loading-container{
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width:20vw;
+    height: 20vw;
+    object-fit: contain;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: expand 1s ease-in-out forwards;
+}
+
+@keyframes expand {
+    0%{
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0;
+    }     55% {
+        transform: translate(-50%, -50%) scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes contract {
+    0%{
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }     55% {
+        transform: translate(-50%, -50%) scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0;
+    }
+}
+
+
+.loading-img{
+    width: 10vw;
+    object-fit: contain;
+}
+
+.loading-text{
+    font: 400 2.15vmin 'Lato';
+    width: 16vw;
+    text-align: center;
+}
+
+
+.loading-text:after {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    -webkit-animation: ellipsis steps(4,end) 2s infinite;      
+    animation: ellipsis steps(4,end) 2s infinite;
+    content: "\2026"; /* ascii code for the ellipsis character */
+    width: 0px;
+  }
+  
+  @keyframes ellipsis {
+    to {
+      width: 2.15vmin;    
+    }
+  }
+  
+  @-webkit-keyframes ellipsis {
+    to {
+      width: 2.15vmin;    
+    }
+  }

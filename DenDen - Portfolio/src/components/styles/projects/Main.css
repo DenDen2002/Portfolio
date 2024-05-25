@@ -1,0 +1,190 @@
+.project-data-header{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: auto;
+    opacity: 0;
+    animation: slideup 1.5s ease-in-out forwards
+}
+
+@keyframes slideup {
+    0%{
+        opacity: 0;
+        top: 20vh;
+    } 100%{
+        opacity: 1;
+        top: 0;
+    }
+}
+
+.project-data-content{
+    display: flex;
+    flex-direction: column;
+    margin: 18vw 7.5vw 0 7.5vw;
+
+}
+
+.project-data-title-container{
+    width: calc(85vw - 50px);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: -24px;
+    opacity: 0;
+    animation: slideright 1.5s forwards ease-in-out 1.75s
+}
+
+.project-data-title{
+    font: 700 5vmin 'Lato';
+    margin: 0;
+}
+
+.project-data-scope{
+    font: 400 3vmin 'Lato';
+    margin: 0;
+    letter-spacing: 5px;
+}
+
+.project-data-info{
+    flex-direction: row;
+    display: flex;
+    align-items: flex-start;
+    font: 400 2.5vmin 'Lato';
+    opacity: 0;
+    animation: slideright 1.5s forwards ease-in-out 1.75s
+}
+
+.project-data-date{
+    width: 40%;
+    margin: 0;
+}
+
+.project-data-company{
+    width:48%;
+    margin: 0;
+}
+
+.project-data-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.project-data-link{
+    margin-bottom: 4px;
+    text-underline-offset:0.5vh;
+}
+
+.project-data-details{
+    margin: 24px 0 0 40%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    opacity: 0;
+    font: 400 2.25vmin 'Lato';
+    animation: sliderright 1.5s forwards ease-in-out 1.75s
+}
+
+.project-data-details p{
+    line-height: 3.25vmin;
+}
+
+@keyframes sliderright {
+    0%{
+        margin-left: calc(40% - 7.5vw);
+        opacity: 0;
+    } 100%{
+        margin-left: 40%;
+        opacity: 1;
+    }
+}
+
+.project-redirect{
+    display: flex;
+    flex-direction: row;
+}
+
+.project-redirect-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 10vw;
+}
+
+.project-arrow{
+    font: 900 4vmin 'Lato';
+    margin: 0;
+    padding: 0;
+    transition: margin-left 0.5s, margin-right 0.5s, color 1.5s;
+}
+
+.project-view{
+    margin: 5px 8px 0 8px;
+    line-height: 1;
+    border-radius: 1px;
+    text-decoration: none;
+    border-bottom: 1.5px solid;
+    padding-bottom: 4px;
+    transition: opacity 0.5s, color 1.5s;
+    cursor: pointer;
+}
+
+.next-project{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    opacity: 0;
+    animation: projectslide 1.5s forwards ease-in-out 1.75s
+}
+
+@keyframes projectslide {
+    0%{
+        margin-right: 7.5vw;
+        opacity: 0;
+    } 100%{
+        margin-right: 0;
+        opacity: 1;
+    }
+}
+
+.next-project:hover,
+.project-redirect-links:hover{
+    cursor: pointer;
+}
+
+.next-project:hover span,
+.project-redirect-links:hover span
+{
+    background: linear-gradient(90deg, #e0e0e0, #999999,#424242, #999999,#e0e0e0);
+    background-repeat: repeat;
+    animation: shining 5s linear infinite;
+    background-size: 300% 100%;
+    background-clip: text; 
+    color: transparent;
+}
+
+
+.next-project:hover .project-arrow,
+.project-redirect-links:hover .project-arrow{
+    margin-left: 4px;
+    margin-right: -4px;
+}
+
+.next-project:hover .project-view,
+.project-redirect-links:hover .project-view
+{
+    opacity: 0.6;
+}
+
+.project-data-image-container{
+    animation: slideright 1.5s forwards ease-in-out 1.75s;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    opacity:0 ;
+    margin-top: 15vh;
+    margin-bottom: 12vh;
+}
